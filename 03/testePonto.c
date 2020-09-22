@@ -43,4 +43,9 @@ int main(){
     printf(" o ponto4 esta dentro do circulo1 ? %s\n", interior(ponto4, circulo1)? "true" : "false");
     printf(" o ponto5 esta dentro do circulo1 ? %s\n", interior(ponto5, circulo1)? "true" : "false");
 
+    long a;
+
+    short c;
+
+
 }
