@@ -57,5 +57,43 @@ int main()
     printf("o segundo primo maior que 1000 eh %d\n", tresPrimeirosPrimosMaioresQue1000[1]);
     printf("o terceiro primo maior que 1000 eh %d\n", tresPrimeirosPrimosMaioresQue1000[2]);
 
+    int matriz1[3][3];
+    // [ ] [ ] [ ] // [ ] [ ] [ ] // [ ] [ ] [ ]
+
+    int tamanho;
+    printf("informe o tamanho da matriz quadrada\n");
+    scanf("%d", &tamanho);
+    int **matriz2;
+    matriz2 = malloc(tamanho * sizeof(int));
+    // [ *p1 ] [ *p2 ] [ *p3 ]
+
+    for (int i=0; i<tamanho; i++){
+        matriz2[i] = malloc(tamanho * sizeof(int));
+        // pn =[ ] [ ] [ ]
+    }
+    // [ * ] [ ] [ ] // [ * ] [ ] [ ] // [ * ] [ ] [ ]
+
+    matriz2[0][0] = 10;
+    matriz2[1][1] = 10;
+    matriz2[2][2] = 10;
+
+    for (int i=0; i<tamanho; i++){
+        for (int j=0; j<tamanho; j++){
+                printf("[%d][%d] = %d\n", i, j, matriz2[i][j]);
+        }
+    }
+
+
+    // usei
+
+    // vamos liberar a matriz2
+
+    for (int i=0; i<tamanho; i++){
+        free(matriz2[i]);
+    }
+
+    free(matriz2);
+
+
     return 0;
 }
