@@ -61,3 +61,6 @@ dkms.conf
 build
 cmake-build-debug
 CMakeLists.txt
+*.exe
+bin
+obj
